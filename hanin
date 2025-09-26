@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hanin Hany Elmeligy — Cybersecurity Analyst</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f1724; --card:#071026; --muted:#9aa6bf; --accent:#07c6a7; --text:#e6eef8;
+    }
+    body.light {
+      --bg:#f9f9fb; --card:#ffffff; --muted:#555; --accent:#07c6a7; --text:#111;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family:Inter,system-ui; background:var(--bg); color:var(--text);
+      transition:background 0.4s, color 0.4s;
+    }
+    .wrap{max-width:1100px;margin:36px auto;padding:28px;border-radius:16px;transition:0.4s}
+    header{display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+    .avatar{width:140px;height:140px;border-radius:16px;
+      background:url('WhatsApp Image 2025-09-12 at 02.25.47_56247ef9111111111111.jpg') center/cover no-repeat;
+      border:2px solid var(--accent);box-shadow:0 6px 20px rgba(0,0,0,0.4);
+    }
+    h1{font-size:22px;margin:0 0 4px;font-weight:800}
+    .sub{color:var(--muted);margin:0;font-size:14px}
+    nav{margin-top:8px;display:flex;gap:12px;flex-wrap:wrap}
+    nav a{color:var(--muted);text-decoration:none;font-size:13px;padding:6px 10px;border-radius:8px;transition:0.3s}
+    nav a.active,nav a:hover{color:var(--accent);background:rgba(7,198,167,0.1)}
+    .contact{margin-left:auto;text-align:right;font-size:14px}
+    .contact a{color:var(--accent);text-decoration:none}
+    main{display:grid;grid-template-columns:1fr 340px;gap:28px;margin-top:24px}
+    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 20px rgba(0,0,0,0.25);transition:0.4s}
+    h2{margin:0 0 12px;font-size:16px}
+    .cta{display:inline-block;padding:10px 16px;border-radius:10px;background:linear-gradient(90deg,var(--accent), #4fd6b3);color:#fff;font-weight:700;text-decoration:none;transition:0.3s}
+    .cta:hover{opacity:0.85}
+    footer{text-align:center;margin-top:20px;color:var(--muted);font-size:13px}
+    #themeToggle{cursor:pointer;padding:6px 12px;border-radius:8px;border:1px solid var(--muted);background:transparent;font-size:13px;margin-left:12px}
+    @media(max-width:960px){main{grid-template-columns:1fr}.contact{text-align:left}}
+    /* Fade-in animation */
+    .fade{opacity:0;transform:translateY(20px);transition:opacity 0.8s ease,transform 0.8s ease}
+    .fade.show{opacity:1;transform:translateY(0)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="avatar"></div>
+      <div>
+        <h1>Hanin Hany Elmeligy</h1>
+        <p class="sub">Cybersecurity Analyst — Forensics · SOC · Penetration Testing</p>
+        <nav>
+          <a href="#about" class="active">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+      <div class="contact">
+        <div>Email: <a href="mailto:haninhanyelmeligy@gmail.com">haninhanyelmeligy@gmail.com</a></div>
+        <div>LinkedIn: <a href="https://www.linkedin.com/in/hanin-hany-elmeligy/">hanin-hany-elmeligy</a></div>
+        <div><button id="themeToggle">🌙 Toggle</button></div>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <article id="about" class="card fade">
+          <h2>About</h2>
+          <p>I’m an AI graduate specialized in Cybersecurity with hands-on experience in penetration testing, digital forensics, and incident response. Passionate about SOC operations and security automation.</p>
+          <div style="margin-top:14px">
+            <a class="cta" href="#contact">Contact Me</a>
+            <a class="cta" href="Hanin-Hany-Elmeligy.pdf" download>Download CV</a>
+          </div>
+        </article>
+
+        <article id="experience" class="card fade" style="margin-top:18px">
+          <h2>Experience</h2>
+          <p><strong>Information Security Analyst Intern — DEPI Program</strong><br><span style="color:var(--muted)">2025</span><br>SOC operations, log analysis, incident handling.</p>
+          <p><strong>Cybersecurity Intern — CyberX</strong><br><span style="color:var(--muted)">2024</span><br>Penetration testing support, traffic log analysis.</p>
+          <p><strong>Cisco Cybersecurity Intern — NTI</strong><br><span style="color:var(--muted)">2022</span><br>Firewall configuration and threat simulations.</p>
+        </article>
+
+        <article id="projects" class="card fade" style="margin-top:18px">
+          <h2>Projects</h2>
+          <p><strong>Web-Based Penetration Testing Framework</strong> — AI-powered automation of recon & exploitation.</p>
+          <p><strong>CTFs & Labs</strong> — Solved 50+ CyberTalents challenges and PortSwigger OWASP labs.</p>
+          <p><strong>Digital Forensics</strong> — Used Autopsy, Volatility, Wireshark for investigations.</p>
+        </article>
+      </section>
+
+      <aside>
+        <div class="card fade">
+          <h2>Education</h2>
+          <p>B.Sc. Artificial Intelligence — Cybersecurity, Menoufia University (2025)</p>
+          <h2>Skills</h2>
+          <p>Python, Bash, C++, Kali Linux, Wireshark, SIEM Basics</p>
+          <h2>Domains</h2>
+          <p>Penetration Testing · Forensics · SOC Ops · Incident Response</p>
+        </div>
+
+        <div id="contact" class="card fade" style="margin-top:16px">
+          <h2>Contact</h2>
+          <p>Email: <a href="mailto:haninhanyelmeligy@gmail.com">haninhanyelmeligy@gmail.com</a></p>
+          <p>LinkedIn: <a href="https://www.linkedin.com/in/hanin-hany-elmeligy/">/hanin-hany-elmeligy</a></p>
+        </div>
+      </aside>
+    </main>
+
+    <footer>© <span id="year"></span> Hanin Hany Elmeligy</footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    // Smooth scroll
+    document.querySelectorAll('nav a').forEach(a=>{
+      a.addEventListener('click',e=>{
+        e.preventDefault();
+        document.querySelectorAll('nav a').forEach(x=>x.classList.remove('active'));
+        a.classList.add('active');
+        document.querySelector(a.getAttribute('href')).scrollIntoView({behavior:'smooth'});
+      });
+    });
+    // Fade-in on scroll
+    const faders=document.querySelectorAll('.fade');
+    const obs=new IntersectionObserver(entries=>{
+      entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show');});
+    });
+    faders.forEach(f=>obs.observe(f));
+    // Theme toggle
+    document.getElementById('themeToggle').onclick=()=>{
+      document.body.classList.toggle('light');
+    }
+  </script>
+</body>
+</html>
